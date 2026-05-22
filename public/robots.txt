@@ -1,4 +1,5 @@
 User-agent: *
 Allow: /
 
+Sitemap: https://scientificviews.in/sitemap_index.xml
 Sitemap: https://scientificviews.in/sitemap.xml
