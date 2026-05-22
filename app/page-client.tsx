@@ -207,6 +207,65 @@ const getExtendedFaqsForTool = (tool: ToolDefinition | null): { q: string; a: st
   }
 };
 
+// Utility wrapper to safely update window.history without triggering DataCloneError from browser extensions or iframe security policies
+const safePushState = (path: string) => {
+  if (typeof window === 'undefined') return;
+  try {
+    const rawState = window.history.state;
+    let state: any = null;
+    if (rawState && typeof rawState === 'object') {
+      state = {};
+      for (const key of Object.keys(rawState)) {
+        if (['key', 'as', 'url', 'options', '__NA_STATE'].includes(key)) {
+          state[key] = rawState[key];
+        }
+      }
+    } else {
+      state = {};
+    }
+    state.as = path;
+    state.url = path;
+    window.history.pushState(state, '', path);
+  } catch (e) {
+    try {
+      window.history.pushState({ as: path, url: path }, '', path);
+    } catch (err) {
+      try {
+        window.history.pushState(null, '', path);
+      } catch (err2) {}
+    }
+  }
+};
+
+const safeReplaceState = (path: string) => {
+  if (typeof window === 'undefined') return;
+  try {
+    const rawState = window.history.state;
+    let state: any = null;
+    if (rawState && typeof rawState === 'object') {
+      state = {};
+      for (const key of Object.keys(rawState)) {
+        if (['key', 'as', 'url', 'options', '__NA_STATE'].includes(key)) {
+          state[key] = rawState[key];
+        }
+      }
+    } else {
+      state = {};
+    }
+    state.as = path;
+    state.url = path;
+    window.history.replaceState(state, '', path);
+  } catch (e) {
+    try {
+      window.history.replaceState({ as: path, url: path }, '', path);
+    } catch (err) {
+      try {
+        window.history.replaceState(null, '', path);
+      } catch (err2) {}
+    }
+  }
+};
+
 interface ScientificViewsSuiteProps {
   initialSlug?: string | null;
 }
@@ -223,9 +282,10 @@ export default function ScientificViewsSuite({ initialSlug = null }: ScientificV
     }
     setCurrentSlug(slug);
     const path = slug ? `/${slug}` : '/';
-    const state = typeof window !== 'undefined' ? { ...window.history.state, as: path, url: path } : null;
-    window.history.pushState(state, '', path);
-    window.scrollTo({ top: 0 });
+    safePushState(path);
+    if (typeof window !== 'undefined') {
+      window.scrollTo({ top: 0 });
+    }
   };
   
   // Theme and dropdown states
@@ -523,11 +583,9 @@ export default function ScientificViewsSuite({ initialSlug = null }: ScientificV
         const exists = TOOLS_LIST.some(t => t.slug === activeSlug) || isLegal;
         if (exists && activeSlug) {
           const tgtPath = `/${activeSlug}`;
-          const state = typeof window !== 'undefined' ? { ...window.history.state, as: tgtPath, url: tgtPath } : null;
-          window.history.replaceState(state, '', tgtPath);
+          safeReplaceState(tgtPath);
         } else {
-          const state = typeof window !== 'undefined' ? { ...window.history.state, as: '/', url: '/' } : null;
-          window.history.replaceState(state, '', '/');
+          safeReplaceState('/');
         }
       } else {
         const path = window.location.pathname;
