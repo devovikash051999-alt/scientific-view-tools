@@ -509,7 +509,7 @@ export default function ScientificViewsSuite({ initialSlug = null }: ScientificV
     );
   };
 
-  // Sync clean pathname routes and fallback hash routing
+  // Sync clean pathname routes and fallback hash routing which automatically cleanses url address bar
   React.useEffect(() => {
     const handleLocationChange = () => {
       const hash = window.location.hash;
@@ -517,6 +517,14 @@ export default function ScientificViewsSuite({ initialSlug = null }: ScientificV
 
       if (hash && hash.startsWith('#/')) {
         activeSlug = hash.replace('#/', '');
+        // Cleanse address bar to standard pathname format
+        const isLegal = ["privacy-policy", "terms-of-service", "disclaimer", "contact", "about"].includes(activeSlug);
+        const exists = TOOLS_LIST.some(t => t.slug === activeSlug) || isLegal;
+        if (exists && activeSlug) {
+          window.history.replaceState(null, '', `/${activeSlug}`);
+        } else {
+          window.history.replaceState(null, '', '/');
+        }
       } else {
         const path = window.location.pathname;
         if (path && path !== "/") {
