@@ -40,39 +40,7 @@
     <priority>0.3</priority>
   </url>
 
-  <!-- Legal & Generic Pages (Hash Routing Fallbacks) -->
-  <url>
-    <loc>https://scientificviews.in/#/about</loc>
-    <lastmod>2026-05-22</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.4</priority>
-  </url>
-  <url>
-    <loc>https://scientificviews.in/#/contact</loc>
-    <lastmod>2026-05-22</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.4</priority>
-  </url>
-  <url>
-    <loc>https://scientificviews.in/#/privacy-policy</loc>
-    <lastmod>2026-05-22</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.3</priority>
-  </url>
-  <url>
-    <loc>https://scientificviews.in/#/terms-of-service</loc>
-    <lastmod>2026-05-22</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.3</priority>
-  </url>
-  <url>
-    <loc>https://scientificviews.in/#/disclaimer</loc>
-    <lastmod>2026-05-22</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.3</priority>
-  </url>
-
-  <!-- Dynamic Suite Tools (Standard Routing & Hash Fallbacks) -->
+  <!-- Dynamic Suite Tools (Standard Routing) -->
   <url>
     <loc>https://scientificviews.in/gst-calculator-india</loc>
     <lastmod>2026-05-22</lastmod>
@@ -80,25 +48,11 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://scientificviews.in/#/gst-calculator-india</loc>
-    <lastmod>2026-05-22</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <url>
     <loc>https://scientificviews.in/reverse-gst-calculator</loc>
     <lastmod>2026-05-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
-  <url>
-    <loc>https://scientificviews.in/#/reverse-gst-calculator</loc>
-    <lastmod>2026-05-22</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
   <url>
     <loc>https://scientificviews.in/compound-interest-calculator</loc>
     <lastmod>2026-05-22</lastmod>
@@ -106,25 +60,11 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://scientificviews.in/#/compound-interest-calculator</loc>
-    <lastmod>2026-05-22</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <url>
     <loc>https://scientificviews.in/freelance-invoice-tax</loc>
     <lastmod>2026-05-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
-  <url>
-    <loc>https://scientificviews.in/#/freelance-invoice-tax</loc>
-    <lastmod>2026-05-22</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
   <url>
     <loc>https://scientificviews.in/interest-comparison-calculator</loc>
     <lastmod>2026-05-22</lastmod>
@@ -132,25 +72,11 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://scientificviews.in/#/interest-comparison-calculator</loc>
-    <lastmod>2026-05-22</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <url>
     <loc>https://scientificviews.in/salary-hike-percentage-calculator</loc>
     <lastmod>2026-05-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
-  <url>
-    <loc>https://scientificviews.in/#/salary-hike-percentage-calculator</loc>
-    <lastmod>2026-05-22</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
   <url>
     <loc>https://scientificviews.in/discounts-calculator</loc>
     <lastmod>2026-05-22</lastmod>
@@ -158,25 +84,11 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://scientificviews.in/#/discounts-calculator</loc>
-    <lastmod>2026-05-22</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <url>
     <loc>https://scientificviews.in/crypto-profit-loss</loc>
     <lastmod>2026-05-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
-  <url>
-    <loc>https://scientificviews.in/#/crypto-profit-loss</loc>
-    <lastmod>2026-05-22</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
   <url>
     <loc>https://scientificviews.in/hourly-to-salary-calculator</loc>
     <lastmod>2026-05-22</lastmod>
@@ -184,25 +96,11 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://scientificviews.in/#/hourly-to-salary-calculator</loc>
-    <lastmod>2026-05-22</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <url>
     <loc>https://scientificviews.in/sip-delayed-cost</loc>
     <lastmod>2026-05-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
-  <url>
-    <loc>https://scientificviews.in/#/sip-delayed-cost</loc>
-    <lastmod>2026-05-22</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
   <url>
     <loc>https://scientificviews.in/lmp-due-date-calculator</loc>
     <lastmod>2026-05-22</lastmod>
@@ -210,25 +108,11 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://scientificviews.in/#/lmp-due-date-calculator</loc>
-    <lastmod>2026-05-22</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <url>
     <loc>https://scientificviews.in/pregnancy-conception-calculator</loc>
     <lastmod>2026-05-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
-  <url>
-    <loc>https://scientificviews.in/#/pregnancy-conception-calculator</loc>
-    <lastmod>2026-05-22</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
   <url>
     <loc>https://scientificviews.in/ivf-due-date-calculator</loc>
     <lastmod>2026-05-22</lastmod>
@@ -236,25 +120,11 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://scientificviews.in/#/ivf-due-date-calculator</loc>
-    <lastmod>2026-05-22</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <url>
     <loc>https://scientificviews.in/ovulation-window-calculator</loc>
     <lastmod>2026-05-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
-  <url>
-    <loc>https://scientificviews.in/#/ovulation-window-calculator</loc>
-    <lastmod>2026-05-22</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
   <url>
     <loc>https://scientificviews.in/period-cycle-predictor</loc>
     <lastmod>2026-05-22</lastmod>
@@ -262,25 +132,11 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://scientificviews.in/#/period-cycle-predictor</loc>
-    <lastmod>2026-05-22</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <url>
     <loc>https://scientificviews.in/bmi-calculator</loc>
     <lastmod>2026-05-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
-  <url>
-    <loc>https://scientificviews.in/#/bmi-calculator</loc>
-    <lastmod>2026-05-22</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
   <url>
     <loc>https://scientificviews.in/bmr-calculator</loc>
     <lastmod>2026-05-22</lastmod>
@@ -288,25 +144,11 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://scientificviews.in/#/bmr-calculator</loc>
-    <lastmod>2026-05-22</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <url>
     <loc>https://scientificviews.in/macro-split-ratio</loc>
     <lastmod>2026-05-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
-  <url>
-    <loc>https://scientificviews.in/#/macro-split-ratio</loc>
-    <lastmod>2026-05-22</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
   <url>
     <loc>https://scientificviews.in/water-intake-calculator</loc>
     <lastmod>2026-05-22</lastmod>
@@ -314,25 +156,11 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://scientificviews.in/#/water-intake-calculator</loc>
-    <lastmod>2026-05-22</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <url>
     <loc>https://scientificviews.in/bac-calculator</loc>
     <lastmod>2026-05-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
-  <url>
-    <loc>https://scientificviews.in/#/bac-calculator</loc>
-    <lastmod>2026-05-22</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
   <url>
     <loc>https://scientificviews.in/pomodoro-timer</loc>
     <lastmod>2026-05-22</lastmod>
@@ -340,25 +168,11 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://scientificviews.in/#/pomodoro-timer</loc>
-    <lastmod>2026-05-22</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <url>
     <loc>https://scientificviews.in/online-stopwatch</loc>
     <lastmod>2026-05-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
-  <url>
-    <loc>https://scientificviews.in/#/online-stopwatch</loc>
-    <lastmod>2026-05-22</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
   <url>
     <loc>https://scientificviews.in/countdown-timer-exams</loc>
     <lastmod>2026-05-22</lastmod>
@@ -366,25 +180,11 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://scientificviews.in/#/countdown-timer-exams</loc>
-    <lastmod>2026-05-22</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <url>
     <loc>https://scientificviews.in/age-calculator-birthdate</loc>
     <lastmod>2026-05-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
-  <url>
-    <loc>https://scientificviews.in/#/age-calculator-birthdate</loc>
-    <lastmod>2026-05-22</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
   <url>
     <loc>https://scientificviews.in/days-between-dates</loc>
     <lastmod>2026-05-22</lastmod>
@@ -392,25 +192,11 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://scientificviews.in/#/days-between-dates</loc>
-    <lastmod>2026-05-22</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <url>
     <loc>https://scientificviews.in/time-zone-converter-slider</loc>
     <lastmod>2026-05-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
-  <url>
-    <loc>https://scientificviews.in/#/time-zone-converter-slider</loc>
-    <lastmod>2026-05-22</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
   <url>
     <loc>https://scientificviews.in/military-time-converter</loc>
     <lastmod>2026-05-22</lastmod>
@@ -418,25 +204,11 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://scientificviews.in/#/military-time-converter</loc>
-    <lastmod>2026-05-22</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <url>
     <loc>https://scientificviews.in/days-until-event</loc>
     <lastmod>2026-05-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
-  <url>
-    <loc>https://scientificviews.in/#/days-until-event</loc>
-    <lastmod>2026-05-22</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
   <url>
     <loc>https://scientificviews.in/working-days-calculator</loc>
     <lastmod>2026-05-22</lastmod>
@@ -444,25 +216,11 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://scientificviews.in/#/working-days-calculator</loc>
-    <lastmod>2026-05-22</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <url>
     <loc>https://scientificviews.in/wpm-typing-test</loc>
     <lastmod>2026-05-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
-  <url>
-    <loc>https://scientificviews.in/#/wpm-typing-test</loc>
-    <lastmod>2026-05-22</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
   <url>
     <loc>https://scientificviews.in/cgpa-to-percentage</loc>
     <lastmod>2026-05-22</lastmod>
@@ -470,25 +228,11 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://scientificviews.in/#/cgpa-to-percentage</loc>
-    <lastmod>2026-05-22</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <url>
     <loc>https://scientificviews.in/gpa-calculator-semester</loc>
     <lastmod>2026-05-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
-  <url>
-    <loc>https://scientificviews.in/#/gpa-calculator-semester</loc>
-    <lastmod>2026-05-22</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
   <url>
     <loc>https://scientificviews.in/percentage-increase-decrease</loc>
     <lastmod>2026-05-22</lastmod>
@@ -496,25 +240,11 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://scientificviews.in/#/percentage-increase-decrease</loc>
-    <lastmod>2026-05-22</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <url>
     <loc>https://scientificviews.in/binary-to-decimal-converter</loc>
     <lastmod>2026-05-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
-  <url>
-    <loc>https://scientificviews.in/#/binary-to-decimal-converter</loc>
-    <lastmod>2026-05-22</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
   <url>
     <loc>https://scientificviews.in/fraction-to-decimal</loc>
     <lastmod>2026-05-22</lastmod>
@@ -522,25 +252,11 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://scientificviews.in/#/fraction-to-decimal</loc>
-    <lastmod>2026-05-22</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <url>
     <loc>https://scientificviews.in/random-number-generator</loc>
     <lastmod>2026-05-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
-  <url>
-    <loc>https://scientificviews.in/#/random-number-generator</loc>
-    <lastmod>2026-05-22</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
   <url>
     <loc>https://scientificviews.in/quadratic-equation-solver</loc>
     <lastmod>2026-05-22</lastmod>
@@ -548,25 +264,11 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://scientificviews.in/#/quadratic-equation-solver</loc>
-    <lastmod>2026-05-22</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <url>
     <loc>https://scientificviews.in/matrix-determinant</loc>
     <lastmod>2026-05-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
-  <url>
-    <loc>https://scientificviews.in/#/matrix-determinant</loc>
-    <lastmod>2026-05-22</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
   <url>
     <loc>https://scientificviews.in/standard-deviation</loc>
     <lastmod>2026-05-22</lastmod>
@@ -574,25 +276,11 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://scientificviews.in/#/standard-deviation</loc>
-    <lastmod>2026-05-22</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <url>
     <loc>https://scientificviews.in/scientific-notation-converter</loc>
     <lastmod>2026-05-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
-  <url>
-    <loc>https://scientificviews.in/#/scientific-notation-converter</loc>
-    <lastmod>2026-05-22</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
   <url>
     <loc>https://scientificviews.in/kg-to-lbs</loc>
     <lastmod>2026-05-22</lastmod>
@@ -600,25 +288,11 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://scientificviews.in/#/kg-to-lbs</loc>
-    <lastmod>2026-05-22</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <url>
     <loc>https://scientificviews.in/inches-to-cm</loc>
     <lastmod>2026-05-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
-  <url>
-    <loc>https://scientificviews.in/#/inches-to-cm</loc>
-    <lastmod>2026-05-22</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
   <url>
     <loc>https://scientificviews.in/feet-to-meters</loc>
     <lastmod>2026-05-22</lastmod>
@@ -626,25 +300,11 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://scientificviews.in/#/feet-to-meters</loc>
-    <lastmod>2026-05-22</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <url>
     <loc>https://scientificviews.in/celsius-to-fahrenheit</loc>
     <lastmod>2026-05-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
-  <url>
-    <loc>https://scientificviews.in/#/celsius-to-fahrenheit</loc>
-    <lastmod>2026-05-22</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
   <url>
     <loc>https://scientificviews.in/mbps-to-gb-download-calculator</loc>
     <lastmod>2026-05-22</lastmod>
@@ -652,25 +312,11 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://scientificviews.in/#/mbps-to-gb-download-calculator</loc>
-    <lastmod>2026-05-22</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <url>
     <loc>https://scientificviews.in/pixels-to-rem</loc>
     <lastmod>2026-05-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
-  <url>
-    <loc>https://scientificviews.in/#/pixels-to-rem</loc>
-    <lastmod>2026-05-22</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
   <url>
     <loc>https://scientificviews.in/hex-to-rgb</loc>
     <lastmod>2026-05-22</lastmod>
@@ -678,25 +324,11 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://scientificviews.in/#/hex-to-rgb</loc>
-    <lastmod>2026-05-22</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <url>
     <loc>https://scientificviews.in/aspect-ratio-calculator</loc>
     <lastmod>2026-05-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
-  <url>
-    <loc>https://scientificviews.in/#/aspect-ratio-calculator</loc>
-    <lastmod>2026-05-22</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
   <url>
     <loc>https://scientificviews.in/gas-mileage-converter</loc>
     <lastmod>2026-05-22</lastmod>
@@ -704,20 +336,7 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://scientificviews.in/#/gas-mileage-converter</loc>
-    <lastmod>2026-05-22</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <url>
     <loc>https://scientificviews.in/shoe-size-converter</loc>
-    <lastmod>2026-05-22</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://scientificviews.in/#/shoe-size-converter</loc>
     <lastmod>2026-05-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
