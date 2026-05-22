@@ -223,7 +223,8 @@ export default function ScientificViewsSuite({ initialSlug = null }: ScientificV
     }
     setCurrentSlug(slug);
     const path = slug ? `/${slug}` : '/';
-    window.history.pushState(null, '', path);
+    const state = typeof window !== 'undefined' ? { ...window.history.state, as: path, url: path } : null;
+    window.history.pushState(state, '', path);
     window.scrollTo({ top: 0 });
   };
   
@@ -521,9 +522,12 @@ export default function ScientificViewsSuite({ initialSlug = null }: ScientificV
         const isLegal = ["privacy-policy", "terms-of-service", "disclaimer", "contact", "about"].includes(activeSlug);
         const exists = TOOLS_LIST.some(t => t.slug === activeSlug) || isLegal;
         if (exists && activeSlug) {
-          window.history.replaceState(null, '', `/${activeSlug}`);
+          const tgtPath = `/${activeSlug}`;
+          const state = typeof window !== 'undefined' ? { ...window.history.state, as: tgtPath, url: tgtPath } : null;
+          window.history.replaceState(state, '', tgtPath);
         } else {
-          window.history.replaceState(null, '', '/');
+          const state = typeof window !== 'undefined' ? { ...window.history.state, as: '/', url: '/' } : null;
+          window.history.replaceState(state, '', '/');
         }
       } else {
         const path = window.location.pathname;
@@ -1242,7 +1246,7 @@ export default function ScientificViewsSuite({ initialSlug = null }: ScientificV
                     className={`flex items-center gap-1.5 px-3 py-1.5 rounded-xl text-xs font-black uppercase tracking-widest transition-colors ${
                       isDarkMode 
                         ? "text-slate-300 hover:bg-slate-800/50 hover:text-white" 
-                        : "text-slate-605 hover:bg-slate-50 hover:text-slate-900"
+                        : "text-slate-600 hover:bg-slate-50 hover:text-slate-900"
                     }`}
                   >
                     {sect.icon}
