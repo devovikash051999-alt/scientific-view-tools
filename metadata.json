@@ -1,0 +1,6 @@
+{
+  "name": "Scientific Views Tools",
+  "description": "Scientific Views Premium 50-in-1 multi-tool suite for calculations, conversions, health, and developer utility",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
