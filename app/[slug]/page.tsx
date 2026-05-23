@@ -9,6 +9,18 @@ interface PageProps {
   }>;
 }
 
+export async function generateStaticParams() {
+  const routes = TOOLS_LIST.map(tool => ({
+    slug: tool.slug,
+  }));
+
+  const legalRoutes = ["privacy-policy", "terms-of-service", "disclaimer", "contact", "about"].map(slug => ({
+    slug,
+  }));
+
+  return [...routes, ...legalRoutes];
+}
+
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
   const resolvedParams = await params;
   const slug = resolvedParams.slug;

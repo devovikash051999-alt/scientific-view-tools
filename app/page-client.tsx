@@ -207,62 +207,30 @@ const getExtendedFaqsForTool = (tool: ToolDefinition | null): { q: string; a: st
   }
 };
 
-// Utility wrapper to safely update window.history without triggering DataCloneError from browser extensions or iframe security policies
+// Utility wrapper to safely update window.history without triggering DataCloneError on mobile browser environments or webviews
 const safePushState = (path: string) => {
   if (typeof window === 'undefined') return;
   try {
-    const rawState = window.history.state;
-    let state: any = null;
-    if (rawState && typeof rawState === 'object') {
-      state = {};
-      for (const key of Object.keys(rawState)) {
-        if (['key', 'as', 'url', 'options', '__NA_STATE'].includes(key)) {
-          state[key] = rawState[key];
-        }
-      }
-    } else {
-      state = {};
-    }
-    state.as = path;
-    state.url = path;
-    window.history.pushState(state, '', path);
+    // We pass a simple, freshly created, 100% serializable plain object.
+    // This perfectly avoids sharing or copying nested non-serializable objects (like symbols, proxies, or window refs)
+    // from window.history.state, preventing all possible DataCloneErrors.
+    window.history.pushState({ as: path, url: path }, '', path);
   } catch (e) {
     try {
-      window.history.pushState({ as: path, url: path }, '', path);
-    } catch (err) {
-      try {
-        window.history.pushState(null, '', path);
-      } catch (err2) {}
-    }
+      window.history.pushState(null, '', path);
+    } catch (err) {}
   }
 };
 
 const safeReplaceState = (path: string) => {
   if (typeof window === 'undefined') return;
   try {
-    const rawState = window.history.state;
-    let state: any = null;
-    if (rawState && typeof rawState === 'object') {
-      state = {};
-      for (const key of Object.keys(rawState)) {
-        if (['key', 'as', 'url', 'options', '__NA_STATE'].includes(key)) {
-          state[key] = rawState[key];
-        }
-      }
-    } else {
-      state = {};
-    }
-    state.as = path;
-    state.url = path;
-    window.history.replaceState(state, '', path);
+    // Solid, freshly created plain object with standard Next.js routing parameters.
+    window.history.replaceState({ as: path, url: path }, '', path);
   } catch (e) {
     try {
-      window.history.replaceState({ as: path, url: path }, '', path);
-    } catch (err) {
-      try {
-        window.history.replaceState(null, '', path);
-      } catch (err2) {}
-    }
+      window.history.replaceState(null, '', path);
+    } catch (err) {}
   }
 };
 
@@ -311,8 +279,20 @@ export default function ScientificViewsSuite({ initialSlug = null }: ScientificV
   const [contactSubmitted, setContactSubmitted] = React.useState<boolean>(false);
   const [contactTicketId, setContactTicketId] = React.useState<string>("");
 
-  // Local state for tool form parameters
-  const [inputs, setInputs] = React.useState<Record<string, any>>({});
+  // Local state for tool form parameters initialized directly based on the initialSlug prop to ensure hydration matches server-rendered SSG perfectly
+  const [inputs, setInputs] = React.useState<Record<string, any>>(() => {
+    if (initialSlug) {
+      const tool = TOOLS_LIST.find(t => t.slug === initialSlug);
+      if (tool) {
+        const initialMap: Record<string, any> = {};
+        tool.fields.forEach(f => {
+          initialMap[f.id] = f.defaultValue;
+        });
+        return initialMap;
+      }
+    }
+    return {};
+  });
   const [copied, setCopied] = React.useState<boolean>(false);
   const [pomoCopied, setPomoCopied] = React.useState<boolean>(false);
   
